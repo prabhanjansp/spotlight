@@ -1,11 +1,6 @@
-import { Text, View } from "react-native";
-import {styles} from "../styles/auth.styles"
+import React from "react";
+import { Redirect } from "expo-router";
 
-export default function Index() {
-  return (
-    <View style={styles.container}>
+const Index = () => <Redirect href="/(tabs)" />;
 
-      <Text  style={styles.title}>Jai shree ram🚩</Text>
-    </View>
-  );
-}
+export default Index;
